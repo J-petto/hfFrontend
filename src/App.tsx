@@ -1,7 +1,7 @@
 function App() {
 
-  console.log(import.meta.env.VITE_CORE_FRONT_BASE_URL);
-  console.log(import.meta.env.VITE_CORE_API_BASE_URL);
+  console.log(import.meta.env.PROD);
+  console.log(import.meta.env.MODE);
 
   fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api")
     .then((data) => console.log(data));
