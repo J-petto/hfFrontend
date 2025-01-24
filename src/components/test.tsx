@@ -4,7 +4,7 @@ const Test = () => {
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
-                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "api/v1/festivalPosts/all");
+                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/festivalPosts/all");
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
