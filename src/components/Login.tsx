@@ -17,6 +17,8 @@ const LoginForm = () => {
             password,
         };
 
+        console.log(import.meta.env.VITE_CORE_API_BASE_URL + '/api/v1/auth/login');
+
         try {
             const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + '/api/v1/auth/login', {
                 method: 'POST',
