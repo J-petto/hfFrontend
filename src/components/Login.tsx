@@ -18,7 +18,7 @@ const LoginForm = () => {
         };
 
         try {
-            const response = await fetch('https://api.hf.codingtori.site/api/v1/auth/login', {
+            const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + '/api/v1/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
