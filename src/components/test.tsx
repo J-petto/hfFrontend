@@ -4,7 +4,13 @@ const Test = () => {
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
-                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/posts/all");
+                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all", {
+                    method: "GET", // GET 요청 설정
+                    headers: {
+                        "Content-Type": "application/json", // JSON 타입 요청 헤더
+                    },
+                    credentials: "include", // 쿠키를 자동으로 포함시킬 수 있도록 설정
+                });
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
