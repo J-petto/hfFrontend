@@ -1,17 +1,17 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-const Test = () => {
-    console.log("url : " + import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all");
-
+const Test: React.FC = () => {
     useEffect(() => {
+        console.log(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all");
+
         const fetchAllPosts = async () => {
             try {
                 const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all", {
-                    method: "GET", // GET 요청 설정
+                    method: "GET",
                     headers: {
-                        "Content-Type": "application/json", // JSON 타입 요청 헤더
+                        "Content-Type": "application/json",
                     },
-                    credentials: "include", // 쿠키를 자동으로 포함시킬 수 있도록 설정
+                    credentials: "include",
                 });
 
                 if (!response.ok) {
