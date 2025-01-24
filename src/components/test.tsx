@@ -4,7 +4,7 @@ const Test = () => {
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
-                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/festivalPosts/all");
+                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/posts/all");
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -18,7 +18,7 @@ const Test = () => {
         };
 
         fetchAllPosts();
-    }, []); // Empty dependency array means this effect runs once on component mount
+    }, []);
 
     return (
         <div>
