@@ -6,7 +6,7 @@ const Test: React.FC = () => {
 
         const fetchAllPosts = async () => {
             try {
-                const response = await fetch(import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all", {
+                const response = await fetch('https://api.hf.codingtori.site/api/v1/Posts/all', {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

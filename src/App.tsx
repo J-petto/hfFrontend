@@ -3,7 +3,11 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Test from './components/test'
 import Main from './components/Main'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';//Router 설정
+import Login from "./components/Login.tsx";
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+//Router 설정
 
 
 function App() {
@@ -19,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/test" element={<Test />} />
+            <Route path="/login" element={<Login/>} />
           </Routes>
         <Footer />
       </div>
