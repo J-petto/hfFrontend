@@ -1,5 +1,4 @@
 import './App.css'
-import KakaoMap from './components/KakaoMap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Test from './components/test'
@@ -19,7 +18,6 @@ function App() {
         <Header />
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/Map" element={<KakaoMap />} />
             <Route path="/test" element={<Test />} />
           </Routes>
         <Footer />

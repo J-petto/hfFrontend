@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const slides = [
   { id: 1, content: 'Slide 1 Content' ,image: 'https://via.placeholder.com/600x300?text=Slide+1'},
