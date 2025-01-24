@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Test from './components/test'
 import Main from './components/Main'
-import Login from "./components/Login.tsx";
+import Login from "./components/Login";
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
