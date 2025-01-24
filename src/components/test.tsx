@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 
 const Test = () => {
+    console.log("url : " + import.meta.env.VITE_CORE_API_BASE_URL + "/api/v1/Posts/all");
+
     useEffect(() => {
         const fetchAllPosts = async () => {
             try {
